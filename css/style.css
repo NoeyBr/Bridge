@@ -1,0 +1,232 @@
+/* reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin :0;
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--primary);
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+/*container*/
+.container {
+    max-width: 1280px;
+    margin-left:  auto;
+    margin-right: auto;
+    padding: 2rem 1rem;
+}
+
+/* NAV*/
+
+#main-nav, #left-nav {
+    font-family: var(--typo);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#left-nav a {
+    color: white;
+    margin-right: 2rem;
+}
+#login {
+    color: white;
+    border: solid 1px #23425c;
+    padding: 1rem 2.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    transition: 0.2s;
+}
+#login:hover{
+    background-color: var(--secondary);
+    border: solid 1px var(--secondary);
+}
+/* Hero page*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+#lef-text {
+    display: flex;
+}
+#left-text h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 500;
+}
+#left-text p {
+    font-size: 1.5rem;
+}
+#formulaire {
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 100%;
+    gap: 1rem;
+    
+}
+
+#formulaire h2 {
+    color: var(--primary);
+    font-weight: 500;
+    margin: 0;
+}
+
+#formulaire p {
+    color: var(--light-grey);
+}
+
+#demo{
+    background-color: var(--secondary);
+    color: white;
+    padding:1rem 4rem ;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+#formulaire input {
+    border-radius: 0.25rem;
+    border: var(--light-grey) 0.25px solid;
+    padding:0.75rem ;
+    
+}
+i {
+    color:white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.fa-arrow-down {
+    text-align: center;
+}
+.fa-arrow-down:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* premiere section*/
+#first-section, #third-section {
+    background-color: var(--light);
+    padding: 3rem;
+}
+.photo img {
+   width: 100%;
+}
+
+.Intro {
+    color: var(--light-grey);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.sous-titres {
+    color: var(--dark-grey);
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0%;
+}
+.description {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+/* bouton bleu*/
+.btn-blue {
+    background-color: var(--primary);
+    padding:1rem 1.5rem ;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    color: white;
+    align-items: center;
+}
+.btn-blue i {
+    font-size: 1rem;
+}
+/* seconde section */
+#seconde-section {
+    padding-top: 5rem;
+}
+.Intro-white {
+ color: var(--light-grey);
+}
+.sous-titres-white {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0%;
+    color: white;
+}
+
+.description-white {
+    font-size: 1.5rem;
+}
+/* bouton blanc */
+.btn-white {
+    background-color:white;
+    padding:1rem 1.5rem ;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    color: var(--primary);
+    align-items: center;
+}
+
+.btn-white i {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+/* abs de page*/
+#bas-de-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+#bas-de-page input {
+    display: block;
+    border-radius: 0.25rem;
+    border: var(--light-grey) 0.25px solid;
+    padding:0.75rem 
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1280px) {
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+   #left-nav {
+       display: flex;
+       align-items: center;
+       gap: 2rem;
+       flex-direction: row;
+   }
+   #logo {
+       margin-right: 1rem;
+   }
+   .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+   }
+   #formulaire {
+       width: 80%;
+   }
+   .fa-arrow-down {
+       text-align: left;
+   }
+}
